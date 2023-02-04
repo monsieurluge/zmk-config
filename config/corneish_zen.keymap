@@ -77,9 +77,9 @@
         navigation_layer {
             // fn2 - navigation
             //             ┌─────┐                                      ┌─────┐
-            //       ┌─────┤s.tab├─────┐                          ┌─────┤     ├─────┐
+            //       ┌─────┤     ├─────┐                          ┌─────┤     ├─────┐
             // ┌─────┤     ├─────┤ tab ├─────┐              ┌─────┤ bsp ├─────┤     ├─────┐
-            // │     ├─────┤shift├─────┤     │              │     ├─────┤down ├─────┤ del │
+            // │s.tab├─────┤shift├─────┤     │              │     ├─────┤down ├─────┤ del │
             // ├─────┤     ├─────┤ctrl ├─────┤              ├─────┤left ├─────┤ up  ├─────┤
             // │     ├─────┤     ├─────┤     │              │     ├─────┤pgdwn├─────┤right│
             // ├─────┤     ├─────┤     ├─────┤              ├─────┤home ├─────┤pgup ├─────┤
@@ -90,10 +90,10 @@
             //                       └─────┘└─────┘    └─────┘└─────┘
             label = "NAV";
             bindings = <
-&none &none &none     &none     &none    &none  &kp BSPC &none     &none     &kp DEL
-&none &none &kp LSHFT &kp LCTRL &none    &none  &kp LEFT &kp DOWN  &kp UP    &kp RIGHT
-&none &none &none     &none     &none    &none  &kp HOME &kp PG_DN &kp PG_UP &kp END
-            &trans    &trans    &trans   &trans &trans   &trans
+LS(&kp TAB) &none &none     &kp TAB   &none    &none  &kp BSPC &none     &none     &kp DEL
+&none       &none &kp LSHFT &kp LCTRL &none    &none  &kp LEFT &kp DOWN  &kp UP    &kp RIGHT
+&none       &none &none     &none     &none    &none  &kp HOME &kp PG_DN &kp PG_UP &kp END
+                  &trans    &trans    &trans   &trans &trans   &trans
             >;
         };
 
