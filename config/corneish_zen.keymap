@@ -91,9 +91,9 @@
             //                       └─────┘└─────┘    └─────┘└─────┘
             label = "NAV";
             bindings = <
-&kp LS(TAB) &none &none     &kp TAB     &none    &none  &kp BSPC &none    &none     &kp DEL
-&none       &none &kp LSHFT &kp LCTRL   &none    &none  &kp LEFT &kp DOWN &kp UP    &kp RIGHT
-&kp LC(TAB) &none &none     &kp RC(TAB) &none    &none  &none    &kp HOME &kp PG_DN &kp PG_UP &kp END
+&kp LS(TAB) &none &none     &kp TAB     &none    &none  &kp BSPC &none     &none     &kp DEL
+&none       &none &kp LSHFT &kp LCTRL   &none    &none  &kp LEFT &kp DOWN  &kp UP    &kp RIGHT
+&kp LC(TAB) &none &none     &kp RG(TAB) &none    &none  &kp HOME &kp PG_DN &kp PG_UP &kp END
                   &trans    &trans      &trans   &trans &trans   &trans
             >;
         };
