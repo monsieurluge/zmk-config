@@ -16,16 +16,16 @@
 
 / {
     behaviors {
-		hp: behavior_hold_preferred {
-			compatible = "zmk,behavior-hold-tap";
-			label = "MOD_TAP";
-			#binding-cells = <2>;
-			flavor = "tap-preferred";
-			tapping_term_ms = <200>;
-			bindings = <&kp>, <&kp>;
-			retro-tap;
-		};
-	};
+        hp: behavior_hold_preferred {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_TAP";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping_term_ms = <200>;
+            bindings = <&kp>, <&kp>;
+            retro-tap;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -59,7 +59,7 @@
         // ┌─────┤  @  ├─────┤  $  ├─────┐              ┌─────┤  &  ├─────┤  (  ├─────┐
         // │  !  ├─────┤  +  ├─────┤  %  │              │  ^  ├─────┤  -  ├─────┤  )  │
         // ├─────┤  =  ├─────┤  {  ├─────┤              ├─────┤  }  ├─────┤  _  ├─────┤
-        // │  '  ├─────┤     ├─────┤  "  │              │  |  ├─────┤     ├─────┤  `  │
+        // │  '  ├─────┤  ~  ├─────┤  "  │              │  |  ├─────┤     ├─────┤  `  │
         // ├─────┤     ├─────┤  [  ├─────┤              ├─────┤  ]  ├─────┤     ├─────┤
         // │     ├─────┘     └─────┤     │              │     ├─────┘     └─────┤  \  │
         // └─────┘        ┌─────┐  └─────┘              └─────┘  ┌─────┐        └─────┘
@@ -69,10 +69,10 @@
         symbols_layer {
            label = "SYMBOL";
            bindings = <
-&kp EXCL &kp AT    &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS &kp KP_MULTIPLY &kp LPAR  &kp RPAR
-&kp APOS &kp EQUAL &kp PLUS &kp LBRC &kp DQT     &kp PIPE  &kp RBRC &kp MINUS       &kp UNDER &kp GRAVE
-&none    &none     &none    &kp LBKT &none       &none     &kp RBKT &none           &none     &kp BSLH
-           	       &trans   &trans   &trans      &kp ENTER &kp ESC  &trans
+&kp EXCL &kp AT    &kp HASH   &kp DLLR &kp PRCNT   &kp CARET &kp AMPS &kp KP_MULTIPLY &kp LPAR  &kp RPAR
+&kp APOS &kp EQUAL &kp PLUS   &kp LBRC &kp DQT     &kp PIPE  &kp RBRC &kp MINUS       &kp UNDER &kp GRAVE
+&none    &none     &kp TILDE2 &kp LBKT &none       &none     &kp RBKT &none           &none     &kp BSLH
+                   &trans     &trans   &trans      &kp ENTER &kp ESC  &trans
            >;
         };
 
