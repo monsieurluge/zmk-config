@@ -15,18 +15,6 @@
 };
 
 / {
-    behaviors {
-        hp: behavior_hold_preferred {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOD_TAP";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping_term_ms = <200>;
-            bindings = <&kp>, <&kp>;
-            retro-tap;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -46,10 +34,10 @@
         default_layer {
             label = "BASE";
             bindings = <
-&kp Q &kp W &kp E     &kp R &kp T       &kp Y           &kp U &kp I     &kp O   &kp P
-&kp A &kp S &kp D     &kp F &kp G       &kp H           &kp J &kp K     &kp L   &kp SEMI
-&kp Z &kp X &kp C     &kp V &kp B       &kp N           &kp M &kp COMMA &kp DOT &kp FSLH
-            &lt 3 TAB &mo 1 &kp LSHFT   &hp LCTRL SPACE &mo 2 &kp RGUI
+&kp Q &kp W &kp E     &kp R &kp T       &kp Y              &kp U &kp I     &kp O   &kp P
+&kp A &kp S &kp D     &kp F &kp G       &kp H              &kp J &kp K     &kp L   &kp SEMI
+&kp Z &kp X &kp C     &kp V &kp B       &kp N              &kp M &kp COMMA &kp DOT &kp FSLH
+            &lt 3 TAB &mo 1 &kp LSHFT   &ht_bl LCTRL SPACE &mo 2 &kp RGUI
             >;
         };
 
