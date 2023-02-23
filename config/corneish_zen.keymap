@@ -40,8 +40,8 @@
         // ├─────┤  X  ├─────┤  V  ├─────┤              ├─────┤  M  ├─────┤  .  ├─────┤
         // │  Z  ├─────┘     └─────┤  B  │              │  N  ├─────┘     └─────┤  /  │
         // └─────┘        ┌─────┐  └─────┘              └─────┘  ┌─────┐        └─────┘
-        //                │ fn3 │┌─────┐┌─────┐    ┌─────┐┌─────┐│ gui │
-        //                └─────┘│f1/tb││shift│    │sp/ct││ fn2 │└─────┘
+        //                │ ly3 │┌─────┐┌─────┐    ┌─────┐┌─────┐│ gui │
+        //                └─────┘│l1/tb││shift│    │sp/ct││ ly2 │└─────┘
         //                       └─────┘└─────┘    └─────┘└─────┘
         default_layer {
             label = "BASE";
@@ -53,7 +53,7 @@
             >;
         };
 
-        // fn1 - symbols
+        // layer 1 - symbols
         //             ┌─────┐                                      ┌─────┐
         //       ┌─────┤  #  ├─────┐                          ┌─────┤  *  ├─────┐
         // ┌─────┤  @  ├─────┤  $  ├─────┐              ┌─────┤  &  ├─────┤  (  ├─────┐
@@ -76,10 +76,10 @@
            >;
         };
 
-        // fn2 - navigation
+        // layer 2 - navigation
         //             ┌─────┐                                      ┌─────┐
-        //       ┌─────┤ gui ├─────┐                          ┌─────┤     ├─────┐
-        // ┌─────┤ ctl ├─────┤ tab ├─────┐              ┌─────┤ bsp ├─────┤     ├─────┐
+        //       ┌─────┤     ├─────┐                          ┌─────┤     ├─────┐
+        // ┌─────┤     ├─────┤     ├─────┐              ┌─────┤ bsp ├─────┤     ├─────┐
         // │     ├─────┤shift├─────┤     │              │     ├─────┤down ├─────┤ del │
         // ├─────┤     ├─────┤ctrl ├─────┤              ├─────┤left ├─────┤ up  ├─────┤
         // │     ├─────┤     ├─────┤     │              │     ├─────┤pgdwn├─────┤right│
@@ -92,14 +92,14 @@
         navigation_layer {
             label = "NAV";
             bindings = <
-&none &kp LCTRL &kp RGUI  &kp TAB   &none    &none  &kp BSPC &none     &none     &kp DEL
-&none &none     &kp LSHFT &kp LCTRL &none    &none  &kp LEFT &kp DOWN  &kp UP    &kp RIGHT
-&none &none     &none     &none     &none    &none  &kp HOME &kp PG_DN &kp PG_UP &kp END
-                &trans    &trans    &trans   &trans &trans   &trans
+&none &none &none     &none     &none    &none  &kp BSPC &none     &none     &kp DEL
+&none &none &kp LSHFT &kp LCTRL &none    &none  &kp LEFT &kp DOWN  &kp UP    &kp RIGHT
+&none &none &none     &none     &none    &none  &kp HOME &kp PG_DN &kp PG_UP &kp END
+            &trans    &trans    &trans   &trans &trans   &trans
             >;
         };
 
-        // fn3 - numbers and media
+        // layer 3 - numbers and media
         //             ┌─────┐                                      ┌─────┐
         //       ┌─────┤ BT3 ├─────┐                          ┌─────┤  8  ├─────┐
         // ┌─────┤ BT2 ├─────┤ BT4 ├─────┐              ┌─────┤  7  ├─────┤  9  ├─────┐
