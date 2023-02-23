@@ -25,6 +25,14 @@
             bindings = <&kp>, <&kp>;
             retro-tap;
         };
+
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp RGUI>, <&kp RALT>;
+        };
     };
 
     keymap {
@@ -40,7 +48,7 @@
         // ├─────┤  X  ├─────┤  V  ├─────┤              ├─────┤  M  ├─────┤  .  ├─────┤
         // │  Z  ├─────┘     └─────┤  B  │              │  N  ├─────┘     └─────┤  /  │
         // └─────┘        ┌─────┐  └─────┘              └─────┘  ┌─────┐        └─────┘
-        //                │ ly3 │┌─────┐┌─────┐    ┌─────┐┌─────┐│ gui │
+        //                │ ly3 │┌─────┐┌─────┐    ┌─────┐┌─────┐│gu/al│
         //                └─────┘│l1/tb││shift│    │sp/ct││ ly2 │└─────┘
         //                       └─────┘└─────┘    └─────┘└─────┘
         default_layer {
@@ -49,7 +57,7 @@
 &kp Q &kp W &kp E &kp R &kp T           &kp Y           &kp U &kp I     &kp O   &kp P
 &kp A &kp S &kp D &kp F &kp G           &kp H           &kp J &kp K     &kp L   &kp SEMI
 &kp Z &kp X &kp C &kp V &kp B           &kp N           &kp M &kp COMMA &kp DOT &kp FSLH
-            &mo 3 &lt 1 TAB &kp LSHFT   &hp LCTRL SPACE &mo 2 &kp RGUI
+            &mo 3 &lt 1 TAB &kp LSHFT   &hp LCTRL SPACE &mo 2 &td0
             >;
         };
 
