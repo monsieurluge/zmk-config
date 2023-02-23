@@ -94,7 +94,7 @@
             bindings = <
 &none &none &none     &none     &none    &none  &kp BSPC     &none     &none     &kp DEL
 &none &none &kp LSHFT &kp LCTRL &none    &none  &kp LEFT     &kp DOWN  &kp UP    &kp RIGHT
-&none &none &none     &none     &none    &none  &kp LG(HOME) &kp PG_DN &kp PG_UP &kp LG(END)
+&none &none &none     &none     &none    &none  &kp RG(HOME) &kp PG_DN &kp PG_UP &kp RG(END)
             &trans    &trans    &trans   &trans &trans       &trans
             >;
         };
