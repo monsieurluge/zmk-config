@@ -7,8 +7,8 @@
 #define _____ &trans
 
 #define GUALT &td0
-#define SPCCT &tp LCTRL SPACE
-#define L1TAB &hp 1 TAB
+#define SPCCT &ht_hp LCTRL SPACE
+#define L1TAB &ht_mo 1 TAB
 #define LY2__ &mo 2
 #define LY3__ &mo 3
 
@@ -76,7 +76,6 @@
 #define SEMI_ &kp SEMI
 #define TILD_ &kp TILDE
 #define UNDR_ &kp UNDER
-
 #define N0___ &kp N0
 #define N1___ &kp N1
 #define N2___ &kp N2
@@ -114,7 +113,7 @@
 
 / {
     behaviors {
-        tp: behavior_hold_preferred {
+        ht_hp: behavior_tap_preferred {
             compatible = "zmk,behavior-hold-tap";
             label = "MOD_TAP";
             #binding-cells = <2>;
@@ -124,9 +123,9 @@
             retro-tap;
         };
 
-        hp: behavior_hold_preferred {
+        ht_mo: behavior_hold_preferred {
             compatible = "zmk,behavior-hold-tap";
-            label = "MOD_TAP";
+            label = "LAY_TAP";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping_term_ms = <200>;
