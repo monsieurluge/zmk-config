@@ -162,10 +162,10 @@
         default_layer {
             label = "BASE";
             bindings = <
-Q____ W____ E____ R____ T____       Y____ U____ I____ O____ P____
-A____ S____ D____ F____ G____       H____ J____ K____ L____ SEMI_
-Z____ X____ C____ V____ B____       N____ M____ CMMA_ DOT__ FSLH_
-            LY3__ L1TAB LSFT_       SPCCT LY2__ GUALT
+                Q____ W____ E____ R____ T____       Y____ U____ I____ O____ P____
+                A____ S____ D____ F____ G____       H____ J____ K____ L____ SEMI_
+                Z____ X____ C____ V____ B____       N____ M____ CMMA_ DOT__ FSLH_
+                            LY3__ L1TAB LSFT_       SPCCT LY2__ GUALT
             >;
         };
 
@@ -185,10 +185,10 @@ Z____ X____ C____ V____ B____       N____ M____ CMMA_ DOT__ FSLH_
         symbols_layer {
            label = "SYMBOL";
            bindings = <
-EXCL_ AT___ HASH_ DLLR_ PRCT_       CRT__ AMPS_ MUL__ LPAR_ RPAR_
-APOS_ EQUL_ PLUS_ LBRC_ DQUT_       PIPE_ RBRC_ MINS_ UNDR_ GRAV_
-XXXXX XXXXX TILD_ LBKT_ XXXXX       XXXXX RBKT_ XXXXX XXXXX BSLH_
-            _____ _____ _____       ENTR_ ESC__ _____
+                EXCL_ AT___ HASH_ DLLR_ PRCT_       CRT__ AMPS_ MUL__ LPAR_ RPAR_
+                APOS_ EQUL_ PLUS_ LBRC_ DQUT_       PIPE_ RBRC_ MINS_ UNDR_ GRAV_
+                XXXXX XXXXX TILD_ LBKT_ XXXXX       XXXXX RBKT_ XXXXX XXXXX BSLH_
+                            _____ _____ _____       ENTR_ ESC__ _____
            >;
         };
 
@@ -208,10 +208,10 @@ XXXXX XXXXX TILD_ LBKT_ XXXXX       XXXXX RBKT_ XXXXX XXXXX BSLH_
         navigation_layer {
             label = "NAV";
             bindings = <
-XXXXX XXXXX XXXXX XXXXX XXXXX       XXXXX BSPC_ XXXXX XXXXX DEL__
-XXXXX XXXXX LSFT_ LCTL_ XXXXX       XXXXX LEFT_ DOWN_ UP___ RGHT_
-XXXXX XXXXX XXXXX XXXXX XXXXX       XXXXX HOMEm PGDN_ PGUP_ ENDm_
-            _____ _____ _____       _____ _____ _____
+                XXXXX XXXXX XXXXX XXXXX XXXXX       XXXXX BSPC_ XXXXX XXXXX DEL__
+                XXXXX XXXXX LSFT_ LCTL_ XXXXX       XXXXX LEFT_ DOWN_ UP___ RGHT_
+                XXXXX XXXXX XXXXX XXXXX XXXXX       XXXXX HOMEm PGDN_ PGUP_ ENDm_
+                            _____ _____ _____       _____ _____ _____
             >;
         };
 
@@ -231,10 +231,10 @@ XXXXX XXXXX XXXXX XXXXX XXXXX       XXXXX HOMEm PGDN_ PGUP_ ENDm_
         numbers_layer {
             label = "NUMBER";
             bindings = <
-BT0__ BT1__ BT2__ BT3__ BT4__       XXXXX N7___ N8___ N9___ XXXXX
-XXXXX PLAY_ PREV_ NEXT_ XXXXX       XXXXX N4___ N5___ N6___ DOT__
-BTC__ XXXXX XXXXX XXXXX XXXXX       XXXXX N1___ N2___ N3___ XXXXX
-            _____ _____ _____       N0___ _____ _____
+                BT0__ BT1__ BT2__ BT3__ BT4__       XXXXX N7___ N8___ N9___ XXXXX
+                XXXXX PLAY_ PREV_ NEXT_ XXXXX       XXXXX N4___ N5___ N6___ DOT__
+                BTC__ XXXXX XXXXX XXXXX XXXXX       XXXXX N1___ N2___ N3___ XXXXX
+                            _____ _____ _____       N0___ _____ _____
             >;
         };
     };
