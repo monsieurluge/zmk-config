@@ -17,10 +17,10 @@
 #define LY2__ &mo 2
 #define LY3__ &mo 3
 
-#define LCTRL &kp LCTRL
-#define LSHFT &kp LSHFT
-#define MEND_ &kp RG(END)
-#define MHOME &kp RG(HOME)
+#define LCTL_ &kp LCTRL
+#define LSFT_ &kp LSHFT
+#define ENDm_ &kp RG(END)
+#define HOMEm &kp RG(HOME)
 
 #define A____ &kp A
 #define B____ &kp B
@@ -54,33 +54,33 @@
 #define AT___ &kp AT
 #define BSLH_ &kp BSLH
 #define BSPC_ &kp BSPC
-#define CARET &kp CARET
-#define COMMA &kp COMMA
+#define CRT__ &kp CARET
+#define CMMA_ &kp COMMA
 #define DEL__ &kp DEL
 #define DLLR_ &kp DLLR
 #define DOT__ &kp DOT
-#define DQUOT &kp DQT
-#define ENTER &kp ENT
-#define EQUAL &kp EQUAL
+#define DQUT_ &kp DQT
+#define ENTR_ &kp ENT
+#define EQUL_ &kp EQUAL
 #define ESC__ &kp ESC
 #define EXCL_ &kp EXCL
 #define FSLH_ &kp FSLH
-#define GRAVE &kp GRAVE
+#define GRAV_ &kp GRAVE
 #define HASH_ &kp HASH
 #define LBKT_ &kp LBKT
 #define LBRC_ &kp LBRC
 #define LPAR_ &kp LPAR
-#define MINUS &kp MINUS
+#define MINS_ &kp MINUS
 #define MUL__ &kp KP_MULTIPLY
 #define PIPE_ &kp PIPE
 #define PLUS_ &kp EQUAL
-#define PRCNT &kp PRCNT
+#define PRCT_ &kp PRCNT
 #define RBKT_ &kp RBKT
 #define RBRC_ &kp RBRC
 #define RPAR_ &kp RPAR
 #define SEMI_ &kp SEMI
-#define TILDE &kp TILDE
-#define UNDER &kp UNDER
+#define TILD_ &kp TILDE
+#define UNDR_ &kp UNDER
 
 #define N0___ &kp N0
 #define N1___ &kp N1
@@ -106,9 +106,9 @@
 
 #define DOWN_ &kp DOWN
 #define LEFT_ &kp LEFT
-#define PGDWN &kp PG_DN
+#define PGDN_ &kp PG_DN
 #define PGUP_ &kp PG_UP
-#define RIGHT &kp RIGHT
+#define RGHT_ &kp RIGHT
 #define UP___ &kp UP
 
 / {
@@ -170,8 +170,8 @@
             bindings = <
 Q____ W____ E____ R____ T____       Y____ U____ I____ O____ P____
 A____ S____ D____ F____ G____       H____ J____ K____ L____ SEMI_
-Z____ X____ C____ V____ B____       N____ M____ COMMA DOT__ FSLH_
-            LY3__ L1TAB LSHFT       SPCCT LY2__ GUALT
+Z____ X____ C____ V____ B____       N____ M____ CMMA_ DOT__ FSLH_
+            LY3__ L1TAB LSFT_       SPCCT LY2__ GUALT
             >;
         };
 
@@ -191,10 +191,10 @@ Z____ X____ C____ V____ B____       N____ M____ COMMA DOT__ FSLH_
         symbols_layer {
            label = "SYMBOL";
            bindings = <
-EXCL_ AT___ HASH_ DLLR_ PRCNT       CARET AMPS_ MUL__ LPAR_ RPAR_
-APOS_ EQUAL PLUS_ LBRC_ DQUOT       PIPE_ RBRC_ MINUS UNDER GRAVE
-XXXXX XXXXX TILDE LBKT_ XXXXX       XXXXX RBKT_ XXXXX XXXXX BSLH_
-            _____ _____ _____       ENTER ESC__ _____
+EXCL_ AT___ HASH_ DLLR_ PRCT_       CRT__ AMPS_ MUL__ LPAR_ RPAR_
+APOS_ EQUL_ PLUS_ LBRC_ DQUT_       PIPE_ RBRC_ MINS_ UNDR_ GRAV_
+XXXXX XXXXX TILD_ LBKT_ XXXXX       XXXXX RBKT_ XXXXX XXXXX BSLH_
+            _____ _____ _____       ENTR_ ESC__ _____
            >;
         };
 
@@ -215,8 +215,8 @@ XXXXX XXXXX TILDE LBKT_ XXXXX       XXXXX RBKT_ XXXXX XXXXX BSLH_
             label = "NAV";
             bindings = <
 XXXXX XXXXX XXXXX XXXXX XXXXX       XXXXX BSPC_ XXXXX XXXXX DEL__
-XXXXX XXXXX LSHFT LCTRL XXXXX       XXXXX LEFT_ DOWN_ UP___ RIGHT
-XXXXX XXXXX XXXXX XXXXX XXXXX       XXXXX MHOME PGDWN PGUP_ MEND_
+XXXXX XXXXX LSFT_ LCTL_ XXXXX       XXXXX LEFT_ DOWN_ UP___ RGHT_
+XXXXX XXXXX XXXXX XXXXX XXXXX       XXXXX HOMEm PGDN_ PGUP_ ENDm_
             _____ _____ _____       _____ _____ _____
             >;
         };
