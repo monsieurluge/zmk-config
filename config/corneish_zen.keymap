@@ -14,8 +14,8 @@
 
 #define LCTL_ &kp LCTRL
 #define LSFT_ &kp LSHFT
-#define ENDm_ &kp RG(END)
-#define HOMEm &kp RG(HOME)
+#define ENDm_ &kp RG(RIGHT)
+#define HOMEm &kp RG(LEFT)
 
 #define A____ &kp A
 #define B____ &kp B
